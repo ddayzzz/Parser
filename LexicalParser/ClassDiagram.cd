@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="JizuItemBase">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lr_jizu.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LRJizuItem">
+    <Position X="0.5" Y="4" Width="1.75" />
+    <InheritanceLine Type="JizuItemBase" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="1.188" Y="3.071" />
+        <Point X="1.062" Y="3.071" />
+        <Point X="1.062" Y="3.693" />
+        <Point X="1.375" Y="3.693" />
+        <Point X="1.375" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAASA0AACgAAAAAACAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>lr_jizu.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jizu&lt;JizuItemType&gt;">
+    <Position X="2.75" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAQiAAAAAAAABAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lr_jizu.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Base">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAQABABAQAAAAAgIAAAhAEAAAAAAEAAAYAEYAA=</HashCode>
+      <FileName>base.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TableItem">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAADCAAAAAAAQAAACAAgA=</HashCode>
+      <FileName>lr_parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LR0SLR1Parser">
+    <Position X="7.5" Y="1.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AgBFAAhAAAAMAyACAEAAAQAAAgAAAAQAAAAEABAQAAA=</HashCode>
+      <FileName>lr_parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="node">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>base.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="TableItemType">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAYA=</HashCode>
+      <FileName>lr_base.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LRType" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lr_base.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CoflictType" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAwAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lr_base.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PInJizuType" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lr_base.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

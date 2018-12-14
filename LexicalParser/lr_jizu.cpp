@@ -49,24 +49,33 @@ int LRJizuItem::getPId() const
 
 bool operator==(const LRJizuItem &lhs, const LRJizuItem & rhs)
 {
-	if (lhs._pos == rhs._pos && lhs._node.left == rhs._node.left && lhs._node.right == rhs._node.right)
-		return true;
-	else
+	
+	auto &&node_left = lhs.getNodeInfo();
+	auto &&node_right = rhs.getNodeInfo();
+	// 首先判断长度是否相等
+	if (node_left.right.length() != node_right.right.length())
 		return false;
+	// . 的位置是否相等
+	int p = lhs._pos;
+	if (p != rhs._pos)
+		return false;
+	// 判断每一个产生式右部符号是否相等
+	return node_left.right == node_right.right;
+
 }
 
 bool operator!=(const LRJizuItem &lhs, const LRJizuItem & rhs)
 {
 	return !(lhs == rhs);
 }
-
-bool operator<(const LRJizuItem &lhs, const LRJizuItem & rhs)
+bool operator<(const LRJizuItem & lhs, const LRJizuItem & rhs)
 {
-	// 使用字符串进行比较
-	std::ostringstream l, r;
-	l << lhs;
-	r << rhs;
-	return l.str() < r.str();
+	std::stringstream left;
+	std::stringstream right;
+	left << lhs;
+	right << rhs;
+	// 变成字符串
+	return left.str() < right.str();
 }
 LRJizuItem::~LRJizuItem()
 {

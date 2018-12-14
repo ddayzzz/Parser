@@ -1,0 +1,6 @@
+4
+A->D
+D->D,k
+D->intk
+D->realk
+realk,k#

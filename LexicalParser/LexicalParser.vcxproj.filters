@@ -18,12 +18,6 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="base.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="tableStack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="lr_base.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -36,6 +30,21 @@
     <ClInclude Include="inter_generator.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="lg_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lg_tableStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inter_grammerTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="id_identifier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lex_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -44,20 +53,32 @@
     <ClCompile Include="LL1Parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="base.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="tableStack.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="lr_jizu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="lr_parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="lg_base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lg_tableStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter_grammerTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="id_identifier.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lex_parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter_generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
+    <None Include="Structure.cd" />
   </ItemGroup>
 </Project>

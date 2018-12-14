@@ -152,16 +152,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="base.h" />
+    <ClInclude Include="id_identifier.h" />
+    <ClInclude Include="inter_grammerTree.h" />
+    <ClInclude Include="lex_parser.h" />
+    <ClInclude Include="lg_base.h" />
     <ClInclude Include="inter_generator.h" />
     <ClInclude Include="lr_base.h" />
     <ClInclude Include="lr_jizu.hpp" />
     <ClInclude Include="lr_parser.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="tableStack.h" />
+    <ClInclude Include="lg_tableStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="base.cpp" />
+    <ClCompile Include="id_identifier.cpp" />
+    <ClCompile Include="inter_generator.cpp" />
+    <ClCompile Include="inter_grammerTree.cpp" />
+    <ClCompile Include="lex_parser.cpp" />
+    <ClCompile Include="lg_base.cpp" />
     <ClCompile Include="LL1Parser.cpp" />
     <ClCompile Include="lr_jizu.cpp" />
     <ClCompile Include="lr_parser.cpp" />
@@ -171,10 +178,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="tableStack.cpp" />
+    <ClCompile Include="lg_tableStack.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
+    <None Include="Structure.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

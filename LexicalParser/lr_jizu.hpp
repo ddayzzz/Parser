@@ -1,5 +1,5 @@
 #pragma once
-#include "base.h"
+#include "lg_base.h"
 #include <sstream>
 #include <map>
 #include <list>
@@ -67,7 +67,7 @@ template<typename JizuItemType>
 class Jizu
 {
 private:
-	std::set<JizuItemType> _items;  // 存放这个集族中的所有产生式
+	std::set<JizuItemType> _items;  // 存放这个集族中的所有产生式, 修改默认的比较函数
 	int _id;
 public:
 	Jizu(int id, const std::initializer_list<JizuItemType> &items) : _id(id), _items(items.begin(), items.end()) {}
@@ -93,6 +93,7 @@ public:
 	// 获取相关的可转移的符号和对应的产生式 p_to_transfer[i] = p 表示符号i的产生式集合. symbols_reached[i] 表示可以通过符号 i 进行转移
 	void getTransferSymbolsAndPs(std::multimap<char, LRJizuItem> &p_to_transfer, std::set<char> &symbols_reached) const;
 };
+
 
 template<typename JizuItemType>
 inline const std::set<JizuItemType> Jizu<JizuItemType>::getAllP() const

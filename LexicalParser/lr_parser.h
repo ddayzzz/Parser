@@ -1,13 +1,12 @@
 #pragma once
 #include "lr_base.h"
 #include "lr_jizu.hpp"
-#include "base.h"
+#include "lg_base.h"
 #include <list>
 #include <queue>
 #include <map>
 #include <string>
 #include <set>
-#include <ostream>
 #include <algorithm>
 #include <iomanip>
 #include <iostream>
@@ -60,17 +59,17 @@ protected:
 	bool do_check_complete(const std::string &stack, char input_top);
 	// 检查当前的集族是否存在问题
 	CoflictType do_check_placable(const Jizu<LRJizuItem> &jizu, const node &accept) const;
-	// 按照 拓扑排序求 FIRST 集合的排列顺序, 一般队列的头部是 最好求的. 但是这个算法并不是最优甚至无法避免诸如 E->T T->E 这种情况, 待改进
-	void do_toplogically_get_first_order(std::queue<char> &order);
+	
 public:
 	LR0SLR1Parser();
+	LR0SLR1Parser(std::istream &stream);
 	// 生成集族
 	void getJizu(char target);
 	// 
 	void demo();
 	virtual ~LR0SLR1Parser() override;
 	// 构造识别活前缀的 DFA
-	void getDFAForActivePrefix();
+	void printDFAForActivePrefix();
 	// LR0 分析表
 	void getTable();
 	// 打印分析表

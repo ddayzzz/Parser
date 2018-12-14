@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "tableStack.h"
+#include "lg_tableStack.h"
 
 // 生成 LL(1) 分析表, 隐含求 SELECT 的过程
 void TableStack::get_table()

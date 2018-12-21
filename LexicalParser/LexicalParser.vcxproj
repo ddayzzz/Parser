@@ -181,6 +181,7 @@
     <ClCompile Include="lg_tableStack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="InterCodeRPN.cd" />
     <None Include="Structure.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

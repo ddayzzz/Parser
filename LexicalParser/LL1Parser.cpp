@@ -1,30 +1,36 @@
 // LL1Parser.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
-
+#define RNP
 #include <iostream>
 #include <sstream>
 #include <vector>
 #include "lex_parser.h"
 #include "lr_parser.h"
+#include "lg_tableStack.h"
 #include "inter_grammerTree.h"
 int main()
 {
-	// LL1
-	/*TableStack res;
-	res.getAns();*/
-	//res.getAns();
+#ifdef LL1
+	TableStack res;
+	res.getAns();
+#endif
+#ifdef LR0SLR1
 	//LR0 或者 SLR
-	/*std::cout << "输入的产生式的个数以及产生式：" << std::endl;
+	std::cout << "输入的产生式的个数以及产生式：" << std::endl;
 	LR0SLR1Parser p(std::cin);
-	p.demo();*/
+	p.demo();
+#endif
 	// 词法分析
-	/*IdentifierTable table;
+#ifdef Lex
+	IdentifierTable table;
 	LexParser parser;
 	std::string ss("int a=5\nint b=3\nint c=a+b");
 	std::stringstream src;
 	src << ss;
-	parser.parse(table, std::cout, src);*/
+	parser.parse(table, std::cout, src);
+#endif
 	// 逆波兰的语法树
+#ifdef RNP
 	init_functionlist();
 	init_constslist();
 	std::string s = "sin(PI-PI/2)+6*my1(5,3)";
@@ -47,7 +53,6 @@ int main()
 	i->print(std::cout);
 	ep2.~Expression();
 	ep.~Expression();
-	return 0;
-
+#endif
 	return 0;
 }

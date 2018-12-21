@@ -80,5 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Structure.cd" />
+    <None Include="InterCodeRPN.cd" />
   </ItemGroup>
 </Project>
